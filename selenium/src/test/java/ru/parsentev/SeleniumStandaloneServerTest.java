@@ -25,9 +25,7 @@ public class SeleniumStandaloneServerTest {
 
 
 	@Test
-	
-	System.out.println("Google chrome is selected");
-System.setProperty("webdriver.chrome.driver","C:\\code\\chromedriver.exe"); 
+
 	public void executeFirefoxDriver() throws MalformedURLException {
 		
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
