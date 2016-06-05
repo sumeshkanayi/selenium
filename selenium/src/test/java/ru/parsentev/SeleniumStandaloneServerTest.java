@@ -21,10 +21,12 @@ import static org.junit.Assert.assertThat;
  * @since 19.11.2015
  */
 public class SeleniumStandaloneServerTest {
+	
+	System.setProperty("webdriver.chrome.driver", "c://code//chromedriver.exe"
 
 	@Test
 	public void executeFirefoxDriver() throws MalformedURLException {
-		DesiredCapabilities capability = DesiredCapabilities.firefox();
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		WebDriver driver = new RemoteWebDriver(
 				new URL("http://10.0.0.47:4444/wd/hub"), capability
 		);
