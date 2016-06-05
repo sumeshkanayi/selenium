@@ -28,7 +28,7 @@ public class SeleniumStandaloneServerTest {
 		WebDriver driver = new RemoteWebDriver(
 				new URL("http://10.0.0.47:4444/wd/hub"), capability
 		);
-		driver.get("http://www.javacodegeeks.com/");
+		driver.get("http://www.google.com/");
 		WebElement element = driver.findElement(By.name("s"));
 		element.sendKeys("selenuim");
 		element.submit();
