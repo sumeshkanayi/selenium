@@ -22,7 +22,7 @@ import static org.junit.Assert.assertThat;
  */
 public class SeleniumStandaloneServerTest {
 	
-	System.setProperty("webdriver.chrome.driver", "c:/code/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "c://code//chromedriver.exe");
 
 	@Test
 	public void executeFirefoxDriver() throws MalformedURLException {
