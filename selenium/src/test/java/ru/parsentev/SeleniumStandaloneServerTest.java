@@ -28,7 +28,7 @@ public class SeleniumStandaloneServerTest {
 
 	public void executeFirefoxDriver() throws MalformedURLException {
 		
-		DesiredCapabilities capability = DesiredCapabilities.chrome();
+		DesiredCapabilities capability = DesiredCapabilities.firefox();
 		WebDriver driver = new RemoteWebDriver(
 				new URL("http://10.0.0.47:4444/wd/hub"), capability
 		);
